@@ -1,6 +1,18 @@
 import java.util.Arrays;
 
 public class Backtracking {
+    /* 
+    Topics Covered: 
+     * Store Value in Array
+     * Subset of String
+     * Permutations of the string
+     * N Queens (print all solutions)
+     * N Queens (count all solutions)
+     * N Queens (print one solution)
+     * Grid ways
+     * Grid ways (optimized)
+     * Sudoku solver
+    */
     public static void main(String[] args) {
         int array[] = new int[5];
         store_value_in_array(array, 0);
