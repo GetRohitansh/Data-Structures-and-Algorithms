@@ -10,6 +10,11 @@ public class StacksLecture {
      * Stack Java Collections Framework (JCF) implementation
      * Push at bottom
      * Reverse a string using stack
+     * Stock Span Problem
+     * Next Greater Element
+     * Valid Parenthesis
+     * Duplicate Parentheses
+     * Maximum Area in Histogram
     */
     public static void main(String[] args) {
         Stack_ArrayList stack = new Stack_ArrayList();
