@@ -3,6 +3,45 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class Heaps {
+    /* 
+    Some Questions using Comparator Class Implementation
+    Topics Covered:
+     * Heap Class Implementation
+     * Add, Remove, Heapify
+     * Heap Sort
+     * nearby_cars
+     * Connect N ropes in minimum cost
+     * Weakest Army Rows are
+     * Sliding Window Maximum using Priority Queue
+    */
+    public static void main(String[] args) {
+        HeapClass heap = new HeapClass();
+        heap.add(2);
+        heap.add(3);
+        heap.add(4);
+        heap.add(5);
+        heap.add(10);
+        heap.add(1);
+
+        System.out.println(heap.list);
+        heap.remove();
+        System.out.println(heap.list);
+        heap.remove();
+        System.out.println(heap.list);
+
+        int arr[] = new int[]{1,2,4,5,3};
+        HeapClass.heapSort(arr);
+        System.out.println("Heap Sort: "+Arrays.toString(arr));
+
+
+        int points[][] = {{3,3}, {5,-1}, {-2, 4}};
+        System.out.println("Nearby Cars: "+nearby_cars(points, 2));
+        System.out.println("Connect N ropes with min. cost: "+connect_N_ropes_min_cost(new int[]{2,3,3,4,6}));
+
+        int army[][] = {{1,0,0,0}, {1,1,1,1}, {1,0,0,0}, {1,0,0,0}};
+        System.out.println("Weakest Army Rows are: "+weakestSoldier(army, 2));
+        System.out.println("Sliding Window Maximum using Priority Queue: "+sliding_window_maximum(new int[]{1,3,-1,-3,5,3,6,7}, 3));
+    }
 
     static class HeapClass {
         ArrayList<Integer> list = new ArrayList<>();
@@ -235,32 +274,5 @@ public class Heaps {
         return ans;
     }
     
-    public static void main(String[] args) {
-        HeapClass heap = new HeapClass();
-        heap.add(2);
-        heap.add(3);
-        heap.add(4);
-        heap.add(5);
-        heap.add(10);
-        heap.add(1);
-
-        System.out.println(heap.list);
-        heap.remove();
-        System.out.println(heap.list);
-        heap.remove();
-        System.out.println(heap.list);
-
-        int arr[] = new int[]{1,2,4,5,3};
-        HeapClass.heapSort(arr);
-        System.out.println("Heap Sort: "+Arrays.toString(arr));
-
-
-        int points[][] = {{3,3}, {5,-1}, {-2, 4}};
-        System.out.println("Nearby Cars: "+nearby_cars(points, 2));
-        System.out.println("Connect N ropes with min. cost: "+connect_N_ropes_min_cost(new int[]{2,3,3,4,6}));
-
-        int army[][] = {{1,0,0,0}, {1,1,1,1}, {1,0,0,0}, {1,0,0,0}};
-        System.out.println("Weakest Army Rows are: "+weakestSoldier(army, 2));
-        System.out.println("Sliding Window Maximum using Priority Queue: "+sliding_window_maximum(new int[]{1,3,-1,-3,5,3,6,7}, 3));
-    }
+    
 }

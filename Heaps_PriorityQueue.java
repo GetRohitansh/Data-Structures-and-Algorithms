@@ -3,6 +3,12 @@ import java.util.PriorityQueue;
 
 public class Heaps_PriorityQueue {
 
+    /* 
+    Question here uses Comparator Class implementation
+    Topics Covered:
+     * Ranking Students (Creating Student Class and ranking them.)
+    */
+
     static class Student implements Comparable<Student>{ // function overriding
         String name;
         int rank;
