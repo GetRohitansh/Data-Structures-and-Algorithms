@@ -235,7 +235,7 @@ public class StacksLecture {
     public static int max_area_in_histogram_brute_force(int nums[]){
         int max_area = 0;
         for(int i=0; i<nums.length; i++){
-            int curr_area = nums[i];
+            // int curr_area = nums[i];
             int min = nums[i];
             for(int j=i; j>=0; j--){                
                 min = Math.min(min, nums[j]);
@@ -247,7 +247,7 @@ public class StacksLecture {
 
     public static int max_area_in_histogram_optimized_stack(int nums[]){
         
-        Stack<Integer> stack = new Stack<>();
+        // Stack<Integer> stack = new Stack<>();
         int next_smallest_left[] = next_smallest_left_element(nums);
         int next_smallest_right[] = next_smallest_right_element(nums);
         int max_area = 0;
