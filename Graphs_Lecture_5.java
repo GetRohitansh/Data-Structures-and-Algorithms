@@ -5,6 +5,12 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Graphs_Lecture_5 {
+    /* 
+    Topics Covered: 
+     * Cheapest Flight with K stops
+     * Connecting Cities With Minimum Cost (MSP using Prims Algo)
+     * Flood Fill Algorithm
+    */
     public static void main(String[] args) {
         Graph g1 = new Graph(4);
         g1.add_edge(0, 1, 100);
