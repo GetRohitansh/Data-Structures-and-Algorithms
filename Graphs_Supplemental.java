@@ -1,7 +1,13 @@
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class Graphs_Supplemantal {
+public class Graphs_Supplemental {
+    /* 
+    Topics Covered: 
+     * Strongly Connected Components (Kosaraju Algorithm)
+     * Bridges in the Graph (Tarjan's Algorithm)
+     * Articulation Point in the Graph (Tarjan's Algorithm)
+    */
 
     public static void main(String[] args) {
         Graph g = new Graph(5);
@@ -53,7 +59,7 @@ public class Graphs_Supplemantal {
 
         g3.add_edge(4, 3);
 
-        System.out.println("Articulation Point in the Graph: "); articulation_points(g3.graph);
+        System.out.println("Articulation Points in the Graph: "); articulation_points(g3.graph);
 
     }
 
