@@ -4,9 +4,18 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Dynamic_Programming_3 {
+    /* 
+    Topics Covered:
+     * Coin Change Print All Solution (Recursion)
+     * Coin Change (Recursion)
+     * D.P. Coin Change (Memoization)
+     * D.P. Coin Change (Tabulation)
+     * D.P. Rod Cutting (Tabulation)
+     * Longest Common Subsequence (Recursion)
+     * D.P. Longest Common Subsequence (Memoization)
+     * D.P. Longest Common Subsequence (Tabulation)
+    */
     public static void main(String[] args) {
-
-
         int val[] = {2,5,3,6}; int sum = 10;
         int dp[][] = new int[val.length+1][sum+1];
     
@@ -15,7 +24,7 @@ public class Dynamic_Programming_3 {
             Arrays.fill(i, -1);
         }
 
-        System.out.println("Coin Change10 (Recursion): ");
+        System.out.println("Coin Change Print All Solution (Recursion): ");
         coin_change(new int[]{1,2,3}, 2, 4, new ArrayList<Integer>(), new HashSet<>());
         System.out.println("Coin Change (Recursion): "+coin_change_count_ways(new int[]{2,5,3,6}, 3, 10));
         System.out.println("D.P. Coin Change (Memoization): "+dp_coin_change_memoization(new int[]{2,5,3,6}, 3, 10, dp));
