@@ -1,6 +1,18 @@
 import java.util.Arrays;
 
 public class Dynamic_Programming_6 {
+
+    /* 
+    Topics Covered:
+     * Matrix Chain Multiplication (Recursion)
+     * D.P. Matrix Chain Multiplication (Memoization)
+     * D.P. Matrix Chain Multiplication (Tabulation)
+     * 
+     * Minimum Partitioning
+     * 
+     * Minimum Array Jump
+    */
+
     public static void main(String args[]){
         System.out.println("Matrix Chain Multiplication (Recursion): "+matrix_chain_multiplication(new int[]{1,2,3,4,3}, 1, 4));
 
